@@ -1,0 +1,13 @@
+@use './src/shared/styles/type';
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  margin: 0;
+  font-family: type.$default-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
