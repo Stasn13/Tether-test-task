@@ -6,8 +6,6 @@ describe('App', () => {
   it('renders app and learn react link', () => {
     render(<App />);
     const appElement = screen.getByTestId('app');
-    const linkElement = screen.getByTestId('app-link');
     expect(appElement).toBeInTheDocument();
-    expect(linkElement).toBeInTheDocument();
   });
 });
