@@ -10,7 +10,7 @@ function App() {
   const orderBookData = useSelector((state) => state.orderBook.books);
 
   React.useEffect(() => {
-    dispatch(connectApi());
+    dispatch(connectApi('P2'));
     return () => dispatch(disconnectApi());
   }, [dispatch]);
 
@@ -69,7 +69,14 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {Object.entries(orderBookData).map(([key, book]) => (
+              {Object.entries(orderBookData?.bids).map(([key, book]) => (
+                <tr key={key}>
+                  <td>{book.count}</td>
+                  <td>{book.amount}</td>
+                  <td>{book.price}</td>
+                </tr>
+              ))}
+              {Object.entries(orderBookData?.asks).map(([key, book]) => (
                 <tr key={key}>
                   <td>{book.count}</td>
                   <td>{book.amount}</td>
