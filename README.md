@@ -1,6 +1,4 @@
-# Project Name
-> A brief description of your project.
-> Live demo link [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+# Tether test task
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -12,44 +10,32 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+The Order Books channel allows you to keep track of the state of the Bitfinex order book.
+It is provided on a price aggregated basis with customizable precision.
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
-<!-- You could add a brief notes what library do and why it was added -->
+- WebSocket
+- RTK
 
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- It is always good to have it. -->
+- Light UI-kit
+- Ability to set precision
 
 
 ## Setup
-What are the project requirements/dependencies? What is the expected node/npm version?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-Commands could be highlighted with a markup
-`write-your-code-here`
+1. Clone project
+2. In the terminal navigate to the root folder
+3. run `nvm use`
+4. run `npm i`
+5. Now you can run project in development mode using `npm start` command
 
 ## Areas for Improvement
-Usually test exercises are limited by a time. So you will be unable to uncover all potential in a code. But you can share your thoughts on what could be improved. Include areas you believe need improvement / could be improved.
 
 Areas for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+- Refactor and decompose existing components
+- Enhance algorithm to create and keep a trading book instance updated
+- Enhance UI-design
+- Add animations to help user check updates smooth

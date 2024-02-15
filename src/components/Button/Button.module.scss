@@ -2,6 +2,7 @@
 
 .button {
   background: ui.$button-base-color;
+  margin: 16px;
   border: 2px solid ui.$button-base-color;
   border-radius: 4px;
   padding: 14px 24px 16px;
@@ -9,16 +10,28 @@
   font-size: 16px;
   transition: .197s;
   cursor: pointer;
+  color: ui.$color-base-dark;
 
   &:hover {
     background: ui.$button-base-hovered-color;
     border-color: ui.$button-base-hovered-color;
+  }
+  &:disabled,
+  &[disabled]{
+    background: ui.$button-base-disabled-color;
+    border-color: ui.$button-base-disabled-color;
+    color: ui.$button-base-accent-color;
+    cursor: not-allowed;
   }
 }
 
 .transparent {
   background: transparent;
   &:hover {
+    background: transparent;
+  }
+  &:disabled,
+  &[disabled]{
     background: transparent;
   }
 }
