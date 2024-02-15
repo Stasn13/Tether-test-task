@@ -4,39 +4,4 @@
 
 .App {
   text-align: center;
-
-  &Logo {
-    height: 40vmin;
-    pointer-events: none;
-
-    @media (prefers-reduced-motion: no-preference) {
-      animation: AppLogoSpin infinite 20s linear;
-    }
-  }
-
-  &Header {
-    @include ui.mainContainer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &Link {
-    color: ui.$link-color;
-  }
-}
-
-.TestButton {
-  margin-top: 0.8rem;
-  @extend %primaryButton;
-}
-
-@keyframes AppLogoSpin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
